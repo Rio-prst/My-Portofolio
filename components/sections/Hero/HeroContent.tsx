@@ -6,7 +6,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const HeroContent = () => {
   return (
-    <>
+    <div className='flex flex-col'>
       <ul className="md:flex items-center gap-6">
         <li>
           <Link href="https://linkedin.com/in/Rio-prasetio" className="inline-flex items-center justify-center p-3 rounded-full hover:bg-[#0A66C2] transition text-white">
@@ -66,7 +66,7 @@ const HeroContent = () => {
           View Projects
         </Link>
       </div>
-    </>
+    </div>
   )
 }
 

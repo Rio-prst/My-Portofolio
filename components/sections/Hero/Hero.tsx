@@ -1,9 +1,11 @@
 import HeroContent from "./HeroContent"
+import HeroVisual from "./HeroVisual";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="flex items-center place-content-between">
       <HeroContent/>
+      <HeroVisual/>
     </section>
   )
 }
