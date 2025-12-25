@@ -11,7 +11,6 @@ const Navbar = () => {
           <span className="text-primary">Dev</span>Portfolio
         </div>
 
-        {/* Menu Tengah */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
           <li>
             <Link href="/" className="text-white hover:text-white transition-colors">
@@ -35,7 +34,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Tombol Kanan dengan Efek Glow */}
         <Link
           href="/chatbot"
           className="bg-primary text-dark font-bold py-2 px-6 rounded-xl flex items-center gap-2 shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:scale-105 transition-transform active:scale-95"
