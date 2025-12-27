@@ -9,7 +9,7 @@ const HeroContent = () => {
     <div className='flex flex-col'>
       <ul className="md:flex items-center gap-6">
         <li>
-          <Link href="https://linkedin.com/in/Rio-prasetio" className="inline-flex items-center justify-center p-3 rounded-full hover:bg-[#0A66C2] transition text-white">
+          <Link href="https://linkedin.com/in/rio-prasetio" className="inline-flex items-center justify-center p-3 rounded-full hover:bg-[#0A66C2] transition text-white">
             <Linkedin size={20}/>
           </Link>
         </li>

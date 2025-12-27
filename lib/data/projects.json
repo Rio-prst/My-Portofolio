@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Learn-check Assessment",
+    "description": "Capstone project Asah with my team",
+    "coverImage": "",
+    "githubUrl": "",
+    "demoUrl": "",
+    "roles": ["Backend Developer"],
+    "techStack": ["Express.js", "Google Gemini API"],
+    "peopleInProject": 5,
+    "status": "completed",
+    "featured": true,
+    "pinned": true
+  },
+  {
+    "id": 2,
+    "title": "Supermarket Sales Analysis",
+    "description": "Final project Data Structures Implementation",
+    "coverImage": "",
+    "githubUrl": "https://github.com/Rio-prst/MarketSalesDataAnalysis",
+    "roles": ["Data Analyst"],
+    "techStack": ["Jupyter Notebook"],
+    "peopleInProject": 1,
+    "status": "completed",
+    "featured": true,
+    "pinned": true
+  },
+  {
+    "id": 3,
+    "title": "Open Music API",
+    "description": "Open Music API. A RESTful API for managing albums and songs, built with Node.js and PostgreSQL. Key features: CRUD endpoints for music data. Effective data validation & error handling. PostgreSQL database with node-pg-migrate. Supports song search and album-song relations.",
+    "coverImage": "",
+    "githubUrl": "https://github.com/Rio-prst/open-music-api",
+    "roles": ["Backend Developer"],
+    "techStack": ["Hapi.js", "Redis", "RabbitMQ", "PostgreSQL"],
+    "peopleInProject": 1,
+    "status": "in-progress",
+    "featured": true,
+    "pinned": true
+  }
+]
