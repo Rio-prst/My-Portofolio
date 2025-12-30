@@ -1,12 +1,12 @@
 "use client"
 
-import { Projects } from "@/lib/types/projects";
+import { ProjectFromDB } from "@/lib/types/projects";
 import { Github, ExternalLink, Users } from "lucide-react";
 import { RoleBadge } from "@/components/ui/RoleBadge";
 import { useState } from "react";
 
 type Props = {
-  project: Projects;
+  project: ProjectFromDB;
 };
 
 export const ProjectCard = ({ project }: Props) => {
@@ -35,7 +35,7 @@ export const ProjectCard = ({ project }: Props) => {
             absolute top-3 right-3 text-[10px] px-2 py-1 rounded-full
             font-semibold uppercase tracking-wide
             ${
-              project.status === "completed"
+              project.status?.toLowerCase() === "completed"
                 ? "bg-green-500/20 text-green-400 border border-green-500/40"
                 : project.status === "in-progress"
                 ? "bg-yellow-500/20 text-yellow-400 border border-yellow-500/40"

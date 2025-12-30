@@ -1,6 +1,8 @@
+import Navbar from "@/components/layout/Navbar";
+
 const ResumePage = () => {
   return (
-    <h1>This is resume page</h1>
+    <Navbar/>
   )
 }
 
