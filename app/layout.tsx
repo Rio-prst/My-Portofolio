@@ -31,6 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link 
+          rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" 
+        />
+      </head>
       <body
         className={`${plusJakartaSans.variable} antialiased bg-dark text-white font-sans`}
       >

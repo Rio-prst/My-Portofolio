@@ -83,17 +83,6 @@ export const ProjectCard = ({ project }: Props) => {
 
         <div className="flex justify-between items-center pt-4 border-t border-slate-800 mt-auto">
           <div className="flex gap-3">
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-white transition-colors"
-              >
-                <Github size={18} />
-              </a>
-            )}
-
             {project.demoUrl && (
               <a
                 href={project.demoUrl}
@@ -102,6 +91,17 @@ export const ProjectCard = ({ project }: Props) => {
                 className="text-slate-400 hover:text-cyan-400 transition-colors"
               >
                 <ExternalLink size={18} />
+              </a>
+            )}
+            
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
+                <Github size={18} />
               </a>
             )}
           </div>
