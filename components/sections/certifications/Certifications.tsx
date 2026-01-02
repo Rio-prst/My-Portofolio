@@ -20,7 +20,7 @@ const certifications = [
 
 export const Certifications = () => {
   return (
-    <section className="py-24 bg-slate-950">
+    <section className="py-24">
       <div className="container mx-auto px-4 w-[85%]">
         <SectionTitle title="Certifications" />
         

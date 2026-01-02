@@ -28,3 +28,11 @@ export const projects = pgTable("projects", {
   
   createdAt: timestamp("created_at").defaultNow(),
 });
+
+export const certifications = pgTable("certifications", {
+  title: varchar("title").notNull(),
+  issuer: varchar("issuer").notNull(),
+  date: varchar("date").notNull(),
+  credentialUrl: text("credential_url"),
+  logo: text("logo"),
+});
