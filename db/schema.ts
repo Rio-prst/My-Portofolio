@@ -6,7 +6,8 @@ import {
   boolean, 
   integer, 
   jsonb, 
-  timestamp 
+  timestamp,
+  uuid
 } from "drizzle-orm/pg-core";
 
 export const projects = pgTable("projects", {
@@ -30,9 +31,10 @@ export const projects = pgTable("projects", {
 });
 
 export const certifications = pgTable("certifications", {
+  certificateId: uuid("certificate_id").primaryKey(),
   title: varchar("title").notNull(),
   issuer: varchar("issuer").notNull(),
   date: varchar("date").notNull(),
   credentialUrl: text("credential_url"),
-  logo: text("logo"),
+  coverImage: text("cover_image"),
 });

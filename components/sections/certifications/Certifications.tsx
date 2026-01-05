@@ -1,39 +1,33 @@
 import { CertificationCard } from "./CertificationCard";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+import { db } from '@/db';
+import { certifications as certSchema } from '@/db/schema';
+import { desc } from 'drizzle-orm';
 
-const certifications = [
-  {
-    title: "Fullstack Web Development",
-    issuer: "Digitalent Kominfo",
-    date: "Dec 2024",
-    credentialUrl: "",
-    logo: "",
-  },
-  {
-    title: "Responsive Web Design",
-    issuer: "freeCodeCamp",
-    date: "Aug 2024",
-    credentialUrl: "",
-    logo: "",
-  },
-];
+export const Certifications = async () => {
+  const allCertifications = await db.select().from(certSchema);
 
-export const Certifications = () => {
   return (
     <section className="py-24">
       <div className="container mx-auto px-4 w-[85%]">
         <SectionTitle title="Certifications" />
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 justify-center">
-          {certifications.map((cert, index) => (
-            <CertificationCard key={index} cert={cert} />
+        <div className="flex flex-wrap justify-center gap-6 mt-12">
+          {allCertifications.map((cert, index) => (
+            <div 
+              key={index} 
+              className="w-full md:w-[calc(50%-12px)] lg:max-w-[500px]"
+            >
+              <CertificationCard cert={cert} />
+            </div>
           ))}
         </div>
         
-        {certifications.length === 1 && (
-            <div className="flex justify-center mt-8 text-slate-500 italic text-sm">
-                More certifications coming soon...
-            </div>
+        {allCertifications.length === 0 ? (
+          <p className="text-center text-slate-500 mt-10">No certifications yet.</p>
+        ) : allCertifications.length < 3 && (
+          <div className="flex justify-center mt-12 text-slate-600 italic text-sm border-t border-slate-900/50 pt-8">
+            More certifications coming soon...
+          </div>
         )}
       </div>
     </section>
