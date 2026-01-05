@@ -1,7 +1,6 @@
 import { db } from "@/db";
 import { projects } from "@/db/schema";
 import Navbar from "@/components/layout/Navbar";
-// import projects from "@/lib/data/projects.json";
 import { ProjectCard } from "@/components/sections/projects/ProjectCard";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 

@@ -26,7 +26,7 @@ export const MySkills = () => {
     <section className="py-24 overflow-hidden">
       <div className="container mx-auto px-4 mb-16">
         <h2 className="text-3xl font-bold text-white text-center tracking-tight">
-          Tech <span className="text-cyan-500">Stack</span>
+          My <span className="text-cyan-500">Skills</span>
         </h2>
       </div>
 

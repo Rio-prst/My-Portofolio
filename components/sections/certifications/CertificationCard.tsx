@@ -8,8 +8,6 @@ interface Props {
 export const CertificationCard = ({ cert }: Props) => {
   return (
     <div className="group bg-slate-900/40 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300 flex flex-col h-full">
-      
-      {/* Bagian Visual (Cover Image) */}
       <div className="relative w-full h-48 bg-slate-800 overflow-hidden">
         {cert.coverImage ? (
           <img 
@@ -22,11 +20,8 @@ export const CertificationCard = ({ cert }: Props) => {
              <Award size={64} />
           </div>
         )}
-        {/* Overlay gradient agar gambar lebih menyatu */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
       </div>
-
-      {/* Bagian Konten (Teks) */}
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex-grow">
           <h3 className="text-white font-bold text-xl group-hover:text-cyan-400 transition-colors leading-tight">

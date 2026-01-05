@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero/Hero";
+import { IntroSection } from "@/components/sections/intro/Intro";
 import { MySkills } from "@/components/sections/skills/MySkills";
 import { Certifications } from "@/components/sections/certifications/Certifications";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar/>
       <main className="pt-24 md:pt-32 w-[85%] mx-auto">
         <Hero/>
+        <IntroSection/>
         <MySkills/>
         <Certifications/>
       </main>
