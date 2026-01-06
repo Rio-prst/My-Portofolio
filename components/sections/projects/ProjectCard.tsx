@@ -13,7 +13,12 @@ export const ProjectCard = ({ project }: Props) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="group flex flex-col h-full bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden transition-all hover:border-cyan-500/50 w-full mb-6">
+    <div className="group flex flex-col h-full bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden transition-all hover:border-cyan-500/50 w-full mb-6
+      transition-all duration-300 ease-out 
+      hover:border-cyan-500/50 
+      hover:scale-[1.03] 
+      hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] 
+      hover:-translate-y-1">
       <div className="relative h-48 bg-slate-800 flex items-center justify-center text-slate-500">
         {project.coverImage ? (
           project.coverImage.startsWith("http") ||

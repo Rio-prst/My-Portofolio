@@ -1,8 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero/Hero";
-import { IntroSection } from "@/components/sections/intro/Intro";
 import { MySkills } from "@/components/sections/skills/MySkills";
-import { Certifications } from "@/components/sections/certifications/Certifications";
+import { FeaturedProjects } from "@/components/sections/projects/FeaturedProjects";
+import { ContactCTA } from "@/components/sections/contact/ContactCTA";
 
 export default function Home() {
   return (
@@ -10,9 +10,9 @@ export default function Home() {
       <Navbar/>
       <main className="pt-24 md:pt-32 w-[85%] mx-auto">
         <Hero/>
-        <IntroSection/>
+        <FeaturedProjects/>
         <MySkills/>
-        <Certifications/>
+        <ContactCTA/>
       </main>
     </>
   )
