@@ -5,10 +5,7 @@ import { Mail, FileText, ArrowRight } from 'lucide-react';
 export const ContactCTA = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full opacity-[0.12] blur-[120px] pointer-events-none" 
-        style={{ background: 'radial-gradient(circle, #06b6d4 0%, transparent 70%)' }}
-      />
+      
 
       <div className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center">
         <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-900/80 border border-slate-800 shadow-[0_0_20px_rgba(6,182,212,0.15)] mb-10">

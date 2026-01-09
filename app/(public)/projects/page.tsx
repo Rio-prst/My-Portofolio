@@ -1,11 +1,10 @@
-import { db } from "@/db";
-import { projects } from "@/db/schema";
 import Navbar from "@/components/layout/Navbar";
 import { ProjectCard } from "@/components/sections/projects/ProjectCard";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+import { getAllProjects } from "@/lib/data/projects/getProjects";
 
 const ProjectsPage = async () => {
-  const allProjects = await db.select().from(projects);
+  const allProjects = await getAllProjects();
 
   return (
     <>
