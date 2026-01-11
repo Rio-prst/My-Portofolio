@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { MessageSquare } from 'lucide-react';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -10,51 +9,37 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Projects", href: "/projects" },
+    { name: "Certificates", href: "/certificates" },
     { name: "About", href: "/about" },
     { name: "Resume", href: "/resume" },
   ];
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[85%] max-w-7xl">
-      <div className="bg-slate-900/60 backdrop-blur-lg border border-white/10 px-8 py-3 rounded-2xl flex items-center justify-between shadow-2xl">
-        
-        {/* Logo */}
-        <div className="text-xl font-bold tracking-tight text-white">
-          <span className="text-cyan-400">Dev</span>Portfolio
-        </div>
-
-        {/* Menu Links */}
-        <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
+    <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-fit font-sans">
+      <div className="bg-[#0f172a]/60 backdrop-blur-md border border-white/10 px-16 py-4 rounded-2xl shadow-2xl">
+        <ul className="flex items-center justify-center gap-14 text-[15px] font-medium tracking-wide">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
               <li key={link.href}>
                 <Link 
                   href={link.href} 
-                  className={`relative py-1 transition-all duration-300 ${
+                  className={`relative py-1 transition-all duration-300 font-[500] ${
                     isActive ? "text-white" : "text-slate-400 hover:text-white"
                   }`}
                 >
                   {link.name}
-                  
                   <span 
-                    className={`absolute -bottom-1 left-0 h-[2px] bg-cyan-400 transition-all duration-300 shadow-[0_0_10px_rgba(34,211,238,0.8)] ${
-                      isActive ? "w-full opacity-100" : "w-0 opacity-0"
+                    className={`absolute -bottom-1.5 left-0 h-[1.5px] bg-cyan-400 transition-all duration-300 shadow-[0_0_10px_rgba(34,211,238,0.8)] ${
+                      isActive ? "opacity-100" : "opacity-0"
                     }`}
+                    style={{ width: isActive ? '100%' : '0' }}
                   />
                 </Link>
               </li>
             );
           })}
         </ul>
-
-        <Link
-          href="/chatbot"
-          className="bg-cyan-400 text-slate-950 font-bold py-2 px-6 rounded-xl flex items-center gap-2 shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:scale-105 transition-transform active:scale-95"
-        >
-          <MessageSquare size={18} />
-          <span className="text-sm">Chat with Me</span>
-        </Link>
       </div>
     </nav>
   );

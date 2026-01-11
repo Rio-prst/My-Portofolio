@@ -9,8 +9,8 @@ const ProjectsPage = async () => {
   return (
     <>
       <Navbar/>
-      <section className="pt-30">
-        <SectionTitle title="Projects"/>
+      <section className="pt-35">
+      
 
         <div className="flex flex-wrap justify-center gap-8 w-[85%] mx-auto mb-8">
           {allProjects.map((project) => (
