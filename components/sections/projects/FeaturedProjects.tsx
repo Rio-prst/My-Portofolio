@@ -10,7 +10,7 @@ export const FeaturedProjects = async () => {
   if (!featuredProjects || featuredProjects.length === 0) return null;
 
   return (
-    <section className="container mx-auto mt-[100px] px-4 w-[85%]">
+    <section className="container mx-auto mt-[100px] px-4 w-[100%]">
       <div className="flex flex-col items-center text-center mb-16">
         <SectionTitle title="Featured Projects" />
         <p className="text-slate-400 mt-1 max-w-2xl leading-relaxed font-sans">
@@ -21,12 +21,10 @@ export const FeaturedProjects = async () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {featuredProjects.map((project) => (
           <div key={project.id} className="flex justify-center h-full">
-            {/* ProjectCard tetap menerima prop project seperti biasa */}
             <ProjectCard project={project} />
           </div>
         ))}
       </div>
-
       <div className="flex justify-center items-center mt-12">
         <Link
           href="/projects"

@@ -39,18 +39,6 @@ const AboutPage = () => {
                   helps me stay focused, creative, and enjoy the process even
                   more.
                 </p>
-                {/* <div className="flex items-center gap-2 pt-4">
-                  <Mail className="text-cyan-400 w-5 h-5" />
-                  <span className="text-slate-400 text-sm">
-                    Email me for any inquiries at{" "}
-                  </span>
-                  <a
-                    href="mailto:csaputra@ucsd.edu"
-                    className="text-cyan-400 hover:underline text-sm font-semibold"
-                  >
-                    csaputra@ucsd.edu
-                  </a>
-                </div> */}
               </div>
             </div>
             <div className="w-full lg:w-[400px] shrink-0">
@@ -59,13 +47,13 @@ const AboutPage = () => {
                 <img
                   src="images/profile+.jpeg"
                   alt="Profile"
-                  className="relative rounded-[2.5rem] w-full object-cover border border-white/10 shadow-2xl"
+                  className="relative rounded-[2.5rem] w-full object-cover border border-white/10 shadow-2xl max-h-[450px]"
                 />
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-[2rem] hover:border-cyan-500/30 transition-all">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-[100px]">
+            {/* <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-[2rem] hover:border-cyan-500/30 transition-all">
               <div className="flex items-center gap-3 mb-6">
                 <Heart className="text-cyan-400 w-6 h-6" />
                 <h3 className="text-xl font-bold text-white tracking-tight">
@@ -102,7 +90,7 @@ const AboutPage = () => {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
             <div className="md:col-span-2 bg-slate-900/40 border border-slate-800 p-8 rounded-[2rem] hover:border-cyan-500/30 transition-all">
               <div className="flex items-center gap-3 mb-6">
                 <Music className="text-cyan-400 w-6 h-6" />
@@ -110,7 +98,6 @@ const AboutPage = () => {
                   My favorite songs
                 </h3>
               </div>
-
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                 {[1, 2].map((i) => (
                   <div

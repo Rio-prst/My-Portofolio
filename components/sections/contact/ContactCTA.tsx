@@ -5,8 +5,6 @@ import { Mail, FileText, ArrowRight } from 'lucide-react';
 export const ContactCTA = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      
-
       <div className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center">
         <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-900/80 border border-slate-800 shadow-[0_0_20px_rgba(6,182,212,0.15)] mb-10">
           <Mail className="w-6 h-6 text-cyan-400" strokeWidth={2} />

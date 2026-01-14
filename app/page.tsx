@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <main className="pt-24 md:pt-32 w-[85%] mx-auto">
+      <main className="pt-24 w-[85%] mx-auto">
         <Hero/>
         <FeaturedProjects/>
         <MySkills/>

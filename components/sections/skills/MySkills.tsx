@@ -34,7 +34,6 @@ const skillsRow2 = [
     icon: "devicon-typescript-plain",
     color: "text-blue-600",
   },
-  { name: "Drizzle", icon: "devicon-drizzle-plain", color: "text-lime-400" },
   {
     name: "Supabase",
     icon: "devicon-supabase-plain",

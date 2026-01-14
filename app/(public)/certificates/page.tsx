@@ -9,9 +9,8 @@ const CertificatesPage = async () => {
   return (
     <>
       <Navbar/>
-      <section className="pt-24">
+      <section className="pt-24 mb-[100px]">
         <div className="container mx-auto px-4 w-[85%]">
-
           <div className="flex flex-wrap justify-center gap-6 mt-12">
             {allCertifications.map((cert, index) => (
               <div
