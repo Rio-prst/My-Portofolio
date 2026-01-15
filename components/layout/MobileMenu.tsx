@@ -18,10 +18,10 @@ export const MobileMenu = ({ isOpen, onClose, navLinks, pathname }: MobileMenuPr
         }`}
         onClick={onClose}
       />
-      <div className={`fixed left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 z-[101] w-[90%] max-w-[400px] transition-all duration-500 md:hidden ${
-        isOpen ? "scale-100 opacity-100" : "scale-90 opacity-0 pointer-events-none"
+      <div className={`fixed left-1/2 -translate-x-1/2 z-[101] w-[90%] max-w-[400px] transition-all duration-500 md:hidden ${
+        isOpen ? "top-24 scale-100 opacity-100" : "top-16 scale-90 opacity-0 pointer-events-none"
       }`}>
-        <div className="bg-slate-900/80 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+        <div className="bg-slate-900/80 backdrop-blur-2xl border border-white/10 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
           <div className="pt-5 pb-8">
             <ul className="flex flex-col">
               {navLinks.map((link) => {
